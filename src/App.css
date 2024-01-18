@@ -36,3 +36,54 @@
     transform: rotate(360deg);
   }
 }
+
+.fixed {
+  position: fixed;
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.bottom-10 {
+  bottom: 10px;
+}
+
+.right-10 {
+  right: 10px;
+}
+
+.bottom-20 {
+  bottom: 20px;
+}
+
+.right-20 {
+  right: 20px;
+}
+
+.bg-blue-500 {
+  background-color: #4299e1;
+}
+
+.hover\:bg-blue-700:hover {
+  background-color: #2b6cb0;
+}
+
+.text-white {
+  color: white;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}

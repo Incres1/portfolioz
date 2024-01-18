@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Navbar from './components/navbar';
+import Body from './components/body';
 
 function App() {
+  const [selectedComponent, setSelectedComponent] = useState();
+
+  const handleNavClick = (componentName) => {
+    setSelectedComponent(componentName);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='bg-dark-blue h-screen'>
+      <Navbar onNavClick={handleNavClick} />
+      <Body selectedComponent={selectedComponent} />
     </div>
   );
 }
