@@ -11,7 +11,6 @@ const Body = ({ selectedComponent }) => {
             <div className='w-5/6 xl:w-4/6 xl:grid xl:grid-cols-2 xl:gap-4'>
                 {selectedComponent === "Skills" && <Skills />}
                 {selectedComponent === "Portfolio" && <Portfolio />}
-                {selectedComponent === "Debug" && <Debug />}
                 {selectedComponent === undefined && (
                     <>
                         <AboutMe />
@@ -22,6 +21,7 @@ const Body = ({ selectedComponent }) => {
             <div className='w-full lg:w-3/4'>
                 {selectedComponent === "Contact" && <Contact />}
                 {selectedComponent === undefined && <Contact />}
+                {selectedComponent === "Debug" && <Debug />}
             </div>
         </div>
     );
